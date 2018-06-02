@@ -1,0 +1,112 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg{
+  height: 100vh;
+  width: 100%;
+  position:absolute;
+  overflow: hidden;
+}
+.bg img{
+  height: 110vh;
+  width: 110%;
+  filter: blur(25px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+.layer{
+  height:100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.2);
+  position: absolute;
+  z-index:99;
+}
+
+.box{
+  width: 31%;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+}
+.box .image img{
+  height: 200px;
+  width: 200px;
+  padding: 0px 130px;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+.controls{
+  padding: 50px;
+}
+.title{
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-60%,-280%);
+  z-index: 9999;
+}
+.buttons img{
+  height: 50px;
+  width: 50px;
+  border: 0;
+  position: relative;
+}
+
+#pause{
+  width: 20%;
+  height: 50%;
+  padding-top: 3px;
+  background-color: #32CD32;
+  border-radius: 18px;
+  border: none;
+  margin: 0px 70px;
+}
+#pause:hover {
+    transform: scale(1.2);
+}
+#pause:active{
+    transform: scale(0.9);
+}
+#pre {
+  padding-top: 3px;
+  border-radius: 10%;
+  border: 0;
+}
+#pre:hover {
+    transform: scale(1.2);
+}
+#pre:active{
+    transform: scale(0.9);
+}
+#nxt {
+  padding-top: 3px;
+  border-radius: 10%;
+  border: 0;
+}
+#nxt:hover {
+    transform: scale(1.2);
+}
+#nxt:active{
+    transform: scale(0.9);
+}
+
+
+button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
